@@ -1,12 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
-void main() => runApp(const MyApp());
+import 'app/app.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
+void main() => runApp(MyApp());
