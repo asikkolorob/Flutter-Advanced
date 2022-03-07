@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class MyApp extends StatefulWidget {
-  MyApp._internal(); //private named constructor
+  MyApp._internal(); //? private named constructor
 
   static final MyApp instance =
-      MyApp._internal(); // single instance -- singleton
+      MyApp._internal(); //? single instance -- singleton
 
-  factory MyApp() => instance; //factory for the class instance
+  factory MyApp() => instance; //? factory for the class instance
 
   int appState = 0;
 
