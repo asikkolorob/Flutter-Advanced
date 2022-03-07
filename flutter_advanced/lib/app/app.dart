@@ -9,13 +9,17 @@ class MyApp extends StatefulWidget {
 
   factory MyApp() => instance; //? factory for the class instance
 
+  // final int appState = 0;
   int appState = 0;
+  
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
+  // int appState = 0;
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
