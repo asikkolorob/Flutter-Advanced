@@ -13,6 +13,8 @@ extension HexColor on Color {
     if (hexColorString.length == 6) {
       hexColorString = "FF" + hexColorString;
     }
-    return Color(int.parse(hexColorString, radix: 16));
+    return Color(
+      int.parse(hexColorString, radix: 16),
+    );
   }
 }
