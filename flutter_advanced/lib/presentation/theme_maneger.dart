@@ -12,7 +12,7 @@ ThemeData getApplicationTheme() {
     primaryColorLight: ColorManeger.primaryOpacity70,
     primaryColorDark: ColorManeger.darkPrimary,
     disabledColor:
-        ColorManeger.grey1, //will be used incase of disabled button for example
+        ColorManeger.grey1, // will be used incase of disabled button for example
     accentColor: ColorManeger.grey,
 
     // ripple Color
