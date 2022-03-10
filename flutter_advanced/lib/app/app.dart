@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../presentation/theme_maneger.dart';
+
 // ignore: must_be_immutable
 class MyApp extends StatefulWidget {
   MyApp._internal(); //? private named constructor
@@ -22,9 +24,10 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      theme: getApplicationTheme(),
+      home: const Scaffold(
         body: Center(
           child: Text('This Text From MyApp Widget'),
         ),
