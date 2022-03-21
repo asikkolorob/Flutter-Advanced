@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../presentation/resources/theme_maneger.dart';
+import '../presentation/resources/routes_maneger.dart';
 
 // ignore: must_be_immutable
 class MyApp extends StatefulWidget {
@@ -13,7 +14,6 @@ class MyApp extends StatefulWidget {
 
   // final int appState = 0;
   int appState = 0;
-  
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -27,11 +27,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: getApplicationTheme(),
-      home: const Scaffold(
-        body: Center(
-          child: Text('This Text From MyApp Widget'),
-        ),
-      ),
+      onGenerateRoute: RoutesGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
     );
   }
 }
