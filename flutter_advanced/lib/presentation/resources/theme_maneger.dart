@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../presentation/color_maneger.dart';
-import '../presentation/values_maneger.dart';
-import '../presentation/fonts_maneger.dart';
-import '../presentation/styles_maneger.dart';
+import 'color_maneger.dart';
+import 'values_maneger.dart';
+import 'fonts_maneger.dart';
+import 'styles_maneger.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
@@ -13,6 +13,7 @@ ThemeData getApplicationTheme() {
     primaryColorDark: ColorManeger.darkPrimary,
     disabledColor: ColorManeger
         .grey1, // will be used incase of disabled button for example
+    // ignore: deprecated_member_use
     accentColor: ColorManeger.grey,
 
     // ripple Color
