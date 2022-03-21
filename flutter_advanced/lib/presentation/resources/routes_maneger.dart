@@ -6,6 +6,7 @@ import '../../presentation/login/login.dart';
 import '../../presentation/main/main_view.dart';
 import '../../presentation/onboarding/onboarding.dart';
 import '../../presentation/register/register.dart';
+import '../../presentation/resources/string_maneger.dart';
 
 class Routes {
   static const String splashRoute = '/';
@@ -44,9 +45,11 @@ class RoutesGenerator {
     return MaterialPageRoute(
       builder: (_) => Scaffold(
         appBar: AppBar(
-          title: const Text('No Route Found!'),
+          title: const Text(AppStrings.noRouteFound),
         ),
-        body: const Center(child: Text("No Route Found!"),),
+        body: const Center(
+          child: Text(AppStrings.noRouteFound),
+        ),
       ),
     );
   }
